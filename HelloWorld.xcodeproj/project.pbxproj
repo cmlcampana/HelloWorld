@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1404F11C039AE5479B53D5D0 /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC09BE2AF8DFE7137F8D5DD /* Pods_HelloWorld.framework */; };
+		3C44F74C28D0F8B900F93B1A /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44F74B28D0F8B900F93B1A /* InitialView.swift */; };
+		3C44F74F28D0F9C600F93B1A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44F74E28D0F9C600F93B1A /* LottieView.swift */; };
 		3C93954A28D0EB1000172559 /* HelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93954928D0EB1000172559 /* HelloWorldApp.swift */; };
 		3C93954C28D0EB1000172559 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93954B28D0EB1000172559 /* MainView.swift */; };
 		3C93954E28D0EB1200172559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C93954D28D0EB1200172559 /* Assets.xcassets */; };
@@ -19,9 +22,12 @@
 		3C93956928D0EC8C00172559 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93956828D0EC8C00172559 /* Translation.swift */; };
 		3C93956B28D0ECA700172559 /* TranslationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93956A28D0ECA700172559 /* TranslationRepository.swift */; };
 		3C93956D28D0EF4300172559 /* TranslationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93956C28D0EF4300172559 /* TranslationViewModel.swift */; };
+		3C93957128D0F48900172559 /* globe.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C93957028D0F48900172559 /* globe.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C44F74B28D0F8B900F93B1A /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		3C44F74E28D0F9C600F93B1A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		3C93954628D0EB1000172559 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C93954928D0EB1000172559 /* HelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldApp.swift; sourceTree = "<group>"; };
 		3C93954B28D0EB1000172559 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -35,6 +41,10 @@
 		3C93956828D0EC8C00172559 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		3C93956A28D0ECA700172559 /* TranslationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationRepository.swift; sourceTree = "<group>"; };
 		3C93956C28D0EF4300172559 /* TranslationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewModel.swift; sourceTree = "<group>"; };
+		3C93957028D0F48900172559 /* globe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = globe.json; sourceTree = "<group>"; };
+		5DBCA62F1D8FEA13FBC14953 /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		8C6E828290DA35B30B19DF25 /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		9FC09BE2AF8DFE7137F8D5DD /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +52,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1404F11C039AE5479B53D5D0 /* Pods_HelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C44F74D28D0F9B900F93B1A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3C44F74E28D0F9C600F93B1A /* LottieView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		3C93953D28D0EB0F00172559 = {
 			isa = PBXGroup;
 			children = (
 				3C93954828D0EB1000172559 /* HelloWorld */,
 				3C93954728D0EB1000172559 /* Products */,
+				EF7E2CE90853527B7E3BB1F6 /* Pods */,
+				4341CB2E5616101D95D6C3EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +88,8 @@
 		3C93954828D0EB1000172559 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				3C44F74D28D0F9B900F93B1A /* Common */,
+				3C93956E28D0F40A00172559 /* Resources */,
 				3C93956428D0EBD100172559 /* Configuration */,
 				3C93955A28D0EBAF00172559 /* Networking */,
 				3C93955928D0EB7900172559 /* ViewModel */,
@@ -91,6 +114,7 @@
 			children = (
 				3C93954928D0EB1000172559 /* HelloWorldApp.swift */,
 				3C93954B28D0EB1000172559 /* MainView.swift */,
+				3C44F74B28D0F8B900F93B1A /* InitialView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +171,39 @@
 			path = Translation;
 			sourceTree = "<group>";
 		};
+		3C93956E28D0F40A00172559 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C93956F28D0F41400172559 /* lottie */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C93956F28D0F41400172559 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				3C93957028D0F48900172559 /* globe.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
+		4341CB2E5616101D95D6C3EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FC09BE2AF8DFE7137F8D5DD /* Pods_HelloWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7E2CE90853527B7E3BB1F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DBCA62F1D8FEA13FBC14953 /* Pods-HelloWorld.debug.xcconfig */,
+				8C6E828290DA35B30B19DF25 /* Pods-HelloWorld.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C93955428D0EB1200172559 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
+				16F9110CFFD88026434CA5A0 /* [CP] Check Pods Manifest.lock */,
 				3C93954228D0EB1000172559 /* Sources */,
 				3C93954328D0EB1000172559 /* Frameworks */,
 				3C93954428D0EB1000172559 /* Resources */,
+				4B862D59CCF7CC9A4E3B1587 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,16 +266,60 @@
 			files = (
 				3C93955128D0EB1200172559 /* Preview Assets.xcassets in Resources */,
 				3C93954E28D0EB1200172559 /* Assets.xcassets in Resources */,
+				3C93957128D0F48900172559 /* globe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16F9110CFFD88026434CA5A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B862D59CCF7CC9A4E3B1587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C93954228D0EB1000172559 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C44F74C28D0F8B900F93B1A /* InitialView.swift in Sources */,
 				3C93956D28D0EF4300172559 /* TranslationViewModel.swift in Sources */,
 				3C93954C28D0EB1000172559 /* MainView.swift in Sources */,
 				3C93956B28D0ECA700172559 /* TranslationRepository.swift in Sources */,
@@ -227,6 +330,7 @@
 				3C93956328D0EBAF00172559 /* NetworkRequest.swift in Sources */,
 				3C93956128D0EBAF00172559 /* Logger.swift in Sources */,
 				3C93956628D0EBDE00172559 /* AppData.swift in Sources */,
+				3C44F74F28D0F9C600F93B1A /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -339,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -351,6 +455,7 @@
 		};
 		3C93955528D0EB1200172559 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBCA62F1D8FEA13FBC14953 /* Pods-HelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +467,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = InitialView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,12 +479,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3C93955628D0EB1200172559 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6E828290DA35B30B19DF25 /* Pods-HelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,6 +497,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = InitialView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -401,7 +509,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

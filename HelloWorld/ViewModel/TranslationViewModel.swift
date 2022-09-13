@@ -20,11 +20,13 @@ final class TranslationViewModel: ObservableObject {
     func translateText(value: String) async {
         let result = await repository.translateText(value: value)
 
-        switch result {
-        case .success(let translations):
-            self.translations = translations.data.translations
-        case .failure(let error):
-            self.error = error.localizedDescription
+        DispatchQueue.main.async {
+            switch result {
+            case .success(let translations):
+                self.translations = translations.data.translations
+            case .failure(let error):
+                self.error = error.localizedDescription
+            }
         }
     }
 }
